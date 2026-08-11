@@ -3,10 +3,10 @@ let submit = document.getElementById("button");
 function sub(event) {
     event.preventDefault();
 
-    let firstName = document.querySelector('input[name="First Name"]').value;
-    let lastName = document.querySelector('input[name="Last Name"]').value;
-    let phoneNumber = document.querySelector('input[name="Phone Number"]').value;
-    let email = document.querySelector('input[name="Email ID"]').value;
+    let firstName = document.getElementsByName("First Name")[0].value;
+    let lastName = document.getElementsByName("Last Name")[0].value;
+    let phoneNumber = document.getElementsByName("Phone Number")[0].value;
+    let email = document.getElementsByName("Email ID")[0].value;
 
     alert(
         "First Name: " + firstName +
